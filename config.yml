@@ -1,0 +1,7 @@
+name: SSMakeLP
+code: SSMakeLP
+version: 1.0.0
+service:
+    - SSMakeLPServiceProvider
+orm.path:
+    - /Resource/doctrine

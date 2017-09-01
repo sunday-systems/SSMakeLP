@@ -1,0 +1,41 @@
+Plugin\SSMakeLP\Entity\SSMakeLP:
+    type: entity
+    table: plg_ssmakelp
+    repositoryClass: Plugin\SSMakeLP\Repository\SSMakeLPRepository
+    id:
+        id:
+            type: integer
+            nullable: false
+            unsigned: false
+            id: true
+            column: lp_id
+            generator:
+                strategy: AUTO
+    fields:
+        path:
+            type: text
+            nullable: false
+        product_id:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+        rank:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+        del_flg:
+            type: smallint
+            nullable: false
+            unsigned: false
+            options:
+                default: '0'
+        create_date:
+            type: datetime
+            nullable: false
+        update_date:
+            type: datetime
+            nullable: false
+
+    lifecycleCallbacks: {  }
